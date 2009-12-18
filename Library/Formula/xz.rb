@@ -7,7 +7,7 @@ class Xz <Formula
   version '4.999.9beta' # *shrug*
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
+    system "./configure", "--prefix=#{prefix}","--disable-assembler", "--disable-debug", "--disable-dependency-tracking"
     system "make install"
   end
 end
